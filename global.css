@@ -21,6 +21,9 @@ body {
 }
 
 .header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	background-color: var(--background);
 	position: sticky;
 	z-index: 10;
@@ -38,6 +41,43 @@ body {
 .statement, .large-nav {
 	position: relative;
 	padding: 0px;
+}
+
+.logo {
+	align-self: flex-start;
+}
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.nav-upper {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.socials {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-right: 20px;
+	border-right: 1px solid rgb(1, 1, 1, 0.46);
+}
+
+.social {
+	padding: 0px 10px;
+	height: 16px;
+}
+
+.login {
+	padding-left: 20px;
+}
+
+.nav-pages a, .nav-pages span {
+	padding: 0px 10px;
 }
 
 .bg-accent {
@@ -266,6 +306,12 @@ h1, h2 {
 
 	.large-nav-icon#bottle {
 		width: 30px;
+	}
+	
+	.nav-pages {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
 	}
 }
 
