@@ -1,0 +1,49 @@
+:root {
+	--mustard: #D7B344;
+	--red: #A1151A;
+	--background: #F4F2EB;
+}
+
+body {
+	background-color: var(--background);
+	font-family: sans-serif;
+	margin: 0;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+}
+
+.header, .mission, .statement, .large-nav {
+	width: 100%;
+	padding: 10px;
+}
+
+.header {
+	background-color: var(--background);
+	position: sticky;
+	top: 0px;
+}
+
+.mission {
+	background-color: var(--red);
+	color: white;
+}
+
+.statement, .large-nav {
+	position: relative;
+	padding: 0px;
+}
+
+.bg-accent {
+	position: absolute;
+	background-color: white;
+	width: 70%;
+	height: 100%;
+}
+
+.over-accent {
+	position: relative;
+	padding: 10px;
+}
