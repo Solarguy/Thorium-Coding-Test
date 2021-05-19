@@ -69,6 +69,7 @@ h1, h2 {
 .mission .column {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .mission .text {
@@ -77,12 +78,12 @@ h1, h2 {
 }
 
 .mission .images {
-	height: 340px;
+	height: 380px;
 	width: 330px;
 	align-self: center;
 }
 
-.mission .a, .mission .b, .mission .square {
+.mission .a, .mission .b, .mission .square, .mission .circle {
 	position: absolute;
 	display: block;
 	border-radius: 12px;
@@ -95,6 +96,23 @@ h1, h2 {
 	left: 80px;
 	width: 200px;
 	height: 200px;
+}
+
+.mission .circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 310px;
+	left: 300px;
+	width: 160px;
+	height: 160px;
+	border-radius: 80px;
+	border: 1.5px dashed var(--mustard);
+	box-shadow: 0px 0px 0px black;
+}
+
+.mission .ribbon {
+	width: 80px;
 }
 
 .mission .a {
