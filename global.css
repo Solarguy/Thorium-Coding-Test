@@ -115,8 +115,20 @@ body {
 	position: relative;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: serif;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+h3 {
+	font-size: 2em;
 }
 
 .header-em {
