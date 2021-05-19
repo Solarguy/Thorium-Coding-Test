@@ -92,6 +92,7 @@ h1, h2 {
 	display: block;
 	border-radius: 12px;
 	box-shadow: 0px 0px 24px black;
+	z-index: 3;
 }
 
 .mission .square {
@@ -113,6 +114,7 @@ h1, h2 {
 	border-radius: 80px;
 	border: 1.5px dashed var(--mustard);
 	box-shadow: 0px 0px 0px black;
+	z-index: 2;
 }
 
 .mission .ribbon {
@@ -129,6 +131,44 @@ h1, h2 {
 	width: 160px;
 }
 
+.statement .cell {
+	text-shadow: 0px 2px 4px #AAA;
+}
+
+.statement .images {
+	position: relative;
+	height: 300px;
+	width: 301px;
+	align-self: center;
+	margin: 50px 0px;
+}
+
+.statement .text {
+	padding-left: 300px;
+}
+
+.statement .c, .statement .square {
+	position: absolute;
+	display: block;
+	border-radius: 12px;
+	box-shadow: 0px 0px 24px black;
+	z-index: 3;
+}
+
+.statement .square {
+	background-color: var(--mustard);
+	top: 10px;
+	left: 0px;
+	width: 280px;
+	height: 280px;
+}
+
+.statement .c {
+	top: 0px;
+	left: 10px;
+	height: 280px;
+}
+
 .button {
 	padding: 10px 20px;
 	background-color: var(--mustard);
@@ -143,5 +183,9 @@ h1, h2 {
 	
 	.mission .text {
 		 margin-right: 0px;
+	 }
+	
+	.statement .text {
+		 padding-left: 0px;
 	 }
 }
