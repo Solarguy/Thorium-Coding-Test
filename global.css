@@ -17,8 +17,7 @@ body {
 }
 
 .header, .mission, .statement, .large-nav {
-	width: 100%;
-	padding: 10px;
+	padding: 10px 10%;
 }
 
 .header {
@@ -46,5 +45,81 @@ body {
 
 .over-accent {
 	position: relative;
-	padding: 10px;
+	padding: 10px 10%;
+}
+
+.row-adapt {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+h1, h2 {
+	font-family: serif;
+}
+
+.header-em {
+	font-style: italic;
+}
+
+.mission .cell {
+	position: relative;
+}
+
+.mission .column {
+	display: flex;
+	align-items: center;
+}
+
+.mission .text {
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+.mission .images {
+	height: 340px;
+	width: 330px;
+	align-self: center;
+}
+
+.mission .a, .mission .b, .mission .square {
+	position: absolute;
+	display: block;
+	border-radius: 12px;
+	box-shadow: 0px 0px 24px black;
+}
+
+.mission .square {
+	background-color: var(--mustard);
+	top: 100px;
+	left: 80px;
+	width: 200px;
+	height: 200px;
+}
+
+.mission .a {
+	width: 260px;
+}
+
+.mission .b {
+	top: 140px;
+	left: 160px;
+	width: 160px;
+}
+
+.button {
+	padding: 10px 20px;
+	background-color: var(--mustard);
+	color: black;
+	border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+	.row-adapt {
+		flex-direction: column;
+	}
+	
+	.mission .text {
+		 margin-right: 0px;
+	 }
 }
